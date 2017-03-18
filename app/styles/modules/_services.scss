@@ -1,0 +1,14 @@
+.service-grid-container {
+  flex-flow: row wrap;
+}
+
+.service-box {
+  text-align: left;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.service-content__name {
+  margin-top: 0;
+}

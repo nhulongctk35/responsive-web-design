@@ -1,0 +1,56 @@
+.btn {
+  font-weight: $font-weight-normal;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 12px;
+  color: $color-white;
+  border-color: transparent;
+  @include border-radius($border-radius-button);
+  @include box-shadow(0 0 20px -10px $color-offblack);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    @include box-shadow(0 0 20px -5px $color-offblack);
+  }
+}
+
+.btn-sm {
+  padding: 6px 12px;
+}
+
+.btn-md {
+  padding: 6px 20px;
+}
+
+.btn-lg {
+  padding: 6px 30px;
+}
+
+.btn-xl {
+  padding: 15px 60px;
+}
+
+.btn-default {
+  border: 2px solid $color-white;
+  background-color: transparent;
+}
+
+.btn-danger {
+  background-color: $color-red;
+  border: 2px solid $color-red;
+}
+
+.btn-agree {
+  background-color: $color-green-select;
+}
+
+.btn-success {
+  background-color: $color-red;
+}
+
+.btn-offwhite {
+  color: $color-offwhite;
+}

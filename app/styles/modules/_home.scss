@@ -1,0 +1,20 @@
+.home {
+    align-items: center;
+}
+
+.home_full_height {
+    height: 100vh;
+}
+
+.home-bg-grey {
+    background-color: $color-grey;
+    color: $color-offwhite;
+}
+
+.home-header__title {
+    color: $color-white;
+}
+
+.home-content__link {
+    margin: 0 10px;
+}

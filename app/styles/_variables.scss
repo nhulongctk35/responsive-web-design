@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600';
+
+$font-main: 'iconmoon', sans-serif;
+$font-family-main: 'Open Sans', sans-serif !default;
+
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-large: 16px;
+
+$font-weight-normal: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+$screen-xsm: 320px;
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$grid-item-lg-2: 565px;
+$grid-item-lg-3: 370px;
+$grid-item-lg-4: 272.5px;
+
+$grid-item-md-2: 445px;
+$grid-item-md-3: 303.33px;
+$grid-item-md-4: 222.5px;
+
+$grid-item-sm-2: 355px;
+$grid-item-sm-3: 230px;
+$grid-item-sm-4: 167.5px;
+
+$border-radius-box: 5px;
+$border-radius-input: 4px;
+$border-radius-button: 5px;
+$border-radius-nav: 20px;
+
+$container-sm: 320px;
+$container-md: 768px;
+$container-lg: 1224px;
+
+$session-padding: 30px 0 60px;
+
+$color-white: #FFF;
+$color-offwhite: #CCC;
+$color-red: #FF3333;
+$color-grey: #4F5254;
+$color-gray: #555;
+$color-black: #333;
+$color-offblack: #4C4C4C;
+$color-dark-black: #000000;
+$color-link: #0099FF;
+$color-green-line: #4294F1;
+$color-green-select: #449FF3;
+$color-dark-green: #122944;
+
+$color-background: #FFFFFF;
+$color-bg-explore: #F0F0F0;
+$color-bg-pricing: #F0FAFE;
+$color-bg-footer: #405266;
+
+$input-color: $color-gray;
+$input-color-border: #ccc;
+$input-bg-color: #485A6F;
+$color-footer: #74879C;
+$color-text-mark: #D5D8DB;
+
+$header_height_default: 50px;

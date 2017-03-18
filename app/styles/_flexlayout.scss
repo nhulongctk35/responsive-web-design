@@ -1,0 +1,15 @@
+.grid-container {
+  display: flex;
+}
+
+.grid-column {
+  flex-direction: column;
+}
+
+.grid-container__center {
+  align-items: baseline;
+}
+
+.grid-item__link-icon {
+  padding-right: 20px;
+}

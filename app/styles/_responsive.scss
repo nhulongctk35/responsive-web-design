@@ -1,0 +1,181 @@
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media (min-width: $screen-xsm) {
+
+  body {
+    font-size: $font-size-small;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: $font-size-small;
+  }
+
+  nav {
+    li {
+      display: none;
+    }
+
+    li.menu-icon {
+      display: inline-block;
+    }
+  }
+
+  #team {
+    .grid-container {
+      .grid-item {
+        margin-right: 0 !important;
+
+        .team-header {
+          img {
+            width: 100px !important;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media (min-width : $screen-xs) {
+
+  body {
+    font-size: $font-size-small;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: $font-size-base;
+  }
+
+  nav {
+    li {
+      display: none;
+    }
+
+    li.menu-icon {
+      display: inline-block;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media (min-width : $screen-sm) {
+
+  body {
+    font-size: $font-size-base;
+  }
+
+  .container {
+    width: 750px;
+  }
+
+  h3 {
+    font-size: $font-size-large;
+  }
+
+  nav {
+    li {
+      display: inline-block;
+    }
+
+    li.menu-icon {
+      display: none;
+    }
+  }
+
+  #team {
+    .grid-container {
+      .grid-item {
+        margin-right: 0 !important;
+
+        &:first-child {
+          margin-right: 20px !important;
+        }
+
+        .team-header {
+          img {
+            width: 150px !important;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : $screen-md) {
+
+  body {
+    font-size: $font-size-base;
+  }
+
+  .container {
+    width: 970px;
+  }
+
+  h3 {
+    font-size: $font-size-large;
+  }
+
+  nav {
+    li {
+      display: inline-block;
+    }
+
+    li.menu-icon {
+      display: none;
+    }
+  }
+
+  #team {
+    .grid-container {
+      .grid-item {
+        margin-right: 20px !important;
+        width: $grid-item-md-3;
+
+        &:last-child {
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : $screen-lg) {
+  body {
+    font-size: $font-size-large;
+  }
+
+  .container {
+    width: 1170px;
+  }
+
+  h3 {
+    font-size: $font-size-large;
+  }
+
+  nav {
+    li {
+      display: inline-block;
+    }
+
+    li.menu-icon {
+      display: none;
+    }
+  }
+}
+

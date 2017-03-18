@@ -1,0 +1,72 @@
+.team-box {
+  margin-top: 70px;
+  padding: 0 10px;
+  margin-right: 20px;
+  background: $color-white;
+
+  @include border-radius($border-radius-box);
+  @include box-shadow(0 0 20px -10px $color-offblack);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-header {
+  .team-header__thubnail {
+    @include border-radius(50%);
+    width: 150px;
+    top: -75px;
+    margin: 0 auto;
+    position: relative;
+    @include box-shadow(0 0 0 15px $color-bg-pricing);
+  }
+
+  .eam-header__name {
+    margin-top: 0;
+  }
+
+  .team-header__title {
+    position: relative;
+    top: -10px;
+  }
+}
+
+.team-contact {
+  height: 40px;
+  position: relative;
+  bottom: 0;
+}
+
+
+
+
+#team {
+  background-color: $color-bg-pricing;
+
+  .section-content {
+
+    .grid-container {
+      flex-flow: wrap;
+
+      .grid-item {
+       
+        flex: auto;
+
+        .team-desc {
+          min-height: 100px;
+          padding: 0 20px;
+        }
+
+        .team-contact {
+          .list-inline {
+            i {
+              font-weight: $font-weight-bold;
+              color: $color-dark-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

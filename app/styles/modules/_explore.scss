@@ -1,0 +1,25 @@
+.explore-bg-dark-white {
+  background-color: $color-bg-explore;
+  align-items: center;
+}
+
+.explore-grid-container {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.grid-item__image-product {
+  width: 100%;
+}
+
+.product-list {
+  padding-left: 100px;
+  text-align: left;
+  justify-content: space-around;
+}
+
+.product-header__name {
+  margin: 0;
+}

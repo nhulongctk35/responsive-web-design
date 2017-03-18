@@ -1,0 +1,142 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-family-main;
+  color: $color-grey;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $color-background;
+  font-size: $font-size-base;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+}
+
+.danger {
+  color: $color-red;
+}
+
+.section-content {
+  padding: 20px 0;
+}
+
+section {
+  text-align: center;
+  padding: $session-padding;
+  clear: both;
+}
+
+.line {
+  width: 10%;
+  height: 2px;
+}
+
+.line_green {
+  background-color: $color-green-line;
+  border: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.no-stype-type {
+  list-style-type: none;
+}
+
+.list-inline {
+  display: inline-table;
+  height: 30px;
+  padding: 0;
+  margin: 0 auto;
+
+  li {
+    float: left;
+    padding-right: 15px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.large-icons {
+  font-size: 18px;
+}
+
+.text-mark {
+  color: $color-text-mark;
+}
+
+.section-header__title {
+  margin-top: 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding-left: 10px;
+  @include border-radius(3px);
+  @include box-shadow(0 0 20px -10px $color-offblack);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  line-height: 30px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.textarea__vresize {
+  resize: vertical;
+}
+
+.section_line {
+  margin-bottom: 20px;
+}
+
+.line_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-large {
+  font-size: 22pt;
+}
