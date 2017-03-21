@@ -139,4 +139,14 @@ input {
 
 .icon-large {
   font-size: 22pt;
+}s
+
+.social-link {
+  &--green {
+    color: $link-color;
+  }
+}
+
+.social-link--green {
+  color: $link-color;
 }

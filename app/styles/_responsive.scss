@@ -24,22 +24,6 @@
       display: inline-block;
     }
   }
-
-  #team {
-    .grid-container {
-      .grid-item {
-        margin-right: 0 !important;
-
-        .team-header {
-          img {
-            width: 100px !important;
-          }
-        }
-
-      }
-    }
-  }
-
 }
 
 /* Extra Small Devices, Phones */
@@ -92,26 +76,6 @@
       display: none;
     }
   }
-
-  #team {
-    .grid-container {
-      .grid-item {
-        margin-right: 0 !important;
-
-        &:first-child {
-          margin-right: 20px !important;
-        }
-
-        .team-header {
-          img {
-            width: 150px !important;
-          }
-        }
-
-      }
-    }
-  }
-
 }
 
 /* Medium Devices, Desktops */
@@ -138,20 +102,6 @@
       display: none;
     }
   }
-
-  #team {
-    .grid-container {
-      .grid-item {
-        margin-right: 20px !important;
-        width: $grid-item-md-3;
-
-        &:last-child {
-          margin-right: 0px !important;
-        }
-      }
-    }
-  }
-
 }
 
 /* Large Devices, Wide Screens */

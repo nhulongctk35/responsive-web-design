@@ -13,7 +13,7 @@
 }
 
 .team-header {
-  .team-header__thubnail {
+  &__thubnail {
     @include border-radius(50%);
     width: 150px;
     top: -75px;
@@ -22,13 +22,20 @@
     @include box-shadow(0 0 0 15px $color-bg-pricing);
   }
 
-  .eam-header__name {
+  &__name {
     margin-top: 0;
   }
 
-  .team-header__title {
+  &__title {
     position: relative;
     top: -10px;
+  }
+}
+
+.team-content {
+  &__desc {
+    min-height: 100px;
+    padding: 0 20px;
   }
 }
 
@@ -38,35 +45,8 @@
   bottom: 0;
 }
 
-
-
-
-#team {
-  background-color: $color-bg-pricing;
-
-  .section-content {
-
-    .grid-container {
-      flex-flow: wrap;
-
-      .grid-item {
-       
-        flex: auto;
-
-        .team-desc {
-          min-height: 100px;
-          padding: 0 20px;
-        }
-
-        .team-contact {
-          .list-inline {
-            i {
-              font-weight: $font-weight-bold;
-              color: $color-dark-black;
-            }
-          }
-        }
-      }
-    }
+.social-item {
+  &__link {
+    color: $color-dark-black;
   }
 }

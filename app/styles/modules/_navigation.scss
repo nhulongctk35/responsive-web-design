@@ -10,17 +10,17 @@
 
 .navbar-header {
   padding: 10px 15px;
-}
 
-.nav-header__brand {
-  color: $color-black;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-}
-
-.nav-header__mark {
-  color: $color-red;
-  background-color: transparent;
+  &__brand {
+    color: $color-black;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+  
+  &__mark {
+    color: $color-red;
+    background-color: transparent;
+  }
 }
 
 .nav_fixed_top {
@@ -40,16 +40,26 @@
 .nav-list {
   flex-flow: row wrap;
   margin: auto;
-}
 
-.nav-list__item {
-  display: block;
-  height: 100%;
-  padding: 5px 20px;
+  &__item {
+    display: block;
+    height: 100%;
+    padding: 5px 20px;
 
-  &:nth-last-child(1) {
-    a:hover {
-      border-bottom: none;
+    &:nth-last-child(1) {
+      a:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  
+  &__link {
+    display: block;
+    height: auto;
+
+    &:hover {
+      color: #000;
+      border-bottom: 2px solid $color-red;
     }
   }
 }
@@ -63,16 +73,8 @@
   display: none;
 }
 
-.nav-list__link {
-  display: block;
-  height: auto;
-
-  &:hover {
-    color: #000;
-    border-bottom: 2px solid $color-red;
+.nav-link {
+  &_grey {
+    color: $color-grey;
   }
-}
-
-.nav-link_grey {
-  color: $color-grey;
 }

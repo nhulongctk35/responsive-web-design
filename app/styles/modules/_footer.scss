@@ -1,30 +1,34 @@
+.footer {
+  padding: $session-padding;
+
+  &__grid-container {
+    justify-content: space-between;
+  }
+}
+
 .footer-bg-dark_green {
   background: $color-bg-footer;
   color: $color-footer;
-}
-
-.footer {
-  padding: $session-padding;
-}
-
-.footer-grid-container {
-  justify-content: space-between;
 }
 
 .grid-item__full-width {
   width: 100%;
 }
 
-.footer-header__name {
-  margin-bottom: 0;
-  padding-bottom: 5px;
-  color: $color-white;
+.infor-header {
+  &__name {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    color: $color-white;
+  }
 }
 
-.form-group__input,
-.form-group__textarea {
-  color: $color-footer;
-  border: none;
+.form-group {
+  &__input,
+  &__textarea {
+    color: $color-footer;
+    border: none;
+  }
 }
 
 input[type="radio"] {
