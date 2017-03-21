@@ -1,20 +1,24 @@
 .home {
-    align-items: center;
-}
+  align-items: center;
 
-.home_full_height {
+  &--full-height {
     height: 100vh;
+  }
 }
 
-.home-bg-grey {
-    background-color: $color-grey;
-    color: $color-offwhite;
-}
-
-.home-header__title {
+.home-header {
+  &__title {
     color: $color-white;
+  }
 }
 
-.home-content__link {
+.home-content {
+  &__link {
     margin: 0 10px;
+  }
+}
+
+.theme--grey {
+  background-color: $color-grey;
+  color: $color-offwhite;
 }

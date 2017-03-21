@@ -1,4 +1,4 @@
-.price-bg-light-green {
+.theme--light-green {
   background-color: $color-bg-pricing;
 }
 
@@ -23,7 +23,7 @@
   }
 }
 
-.price-box_container {
+.price-grid-container {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
@@ -31,36 +31,39 @@
 
 .price-month {
   max-height: 150px;
-}
 
-.price-month__amount {
-  font-size: 80px;
-  position: relative;
-  top:25px;
-}
+  &__amount {
+    font-size: 80px;
+    position: relative;
+    top:25px;
+    line-height: 40px;
+  }
 
-.price-month__currency {
-  font-size: 36px;
-}
+  &__currency {
+    font-size: 36px;
+  }
 
-.price-month__name {
-  position: relative;
-  top: 25px;
+  &__name {
+    position: relative;
+    top: 25px;
+  }
 }
 
 .price-type {
   max-height: 60px;
-}
 
-.price-type__name {
-  margin: 0;
+  &__name {
+    margin: 0;
+  }
 }
 
 .price-content {
   min-height: 150px;
 }
 
-.price__btn {
-  position: relative;
-  bottom: 0;
+.price-box {
+  &__btn {
+    position: relative;
+    bottom: 0;
+  }
 }

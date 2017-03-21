@@ -1,14 +1,19 @@
+.theme--white {
+  background-color: $color-white;
+}
+
 .nav {
   width: 100%;
   height: $header_height_default;
   padding: 5px 0;
+
+  &--fixed-top {
+    position: fixed;
+    z-index: 1000;
+  }
 }
 
-.nav_theme_white {
-  background-color: $color-white;
-}
-
-.navbar-header {
+.nav-header {
   padding: 10px 15px;
 
   &__brand {
@@ -23,18 +28,13 @@
   }
 }
 
-.nav_fixed_top {
-  position: fixed;
-  z-index: 1000;
-}
-
-.nav-grid-container {
+.nav-grid {
   height: 40px;
-}
 
-.nav-grid-center {
-  justify-content: space-between;
-  align-items: center;
+  &--center {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .nav-list {
@@ -64,17 +64,19 @@
   }
 }
 
-.nav-item_border {
-  border: 1px solid $color-red;
-  @include border-radius($border-radius-nav);
-}
+.nav-item {
+  &--border {
+    border: 1px solid $color-red;
+    @include border-radius($border-radius-nav);
+  }
 
-.nav-item_icon {
-  display: none;
+  &--icon {
+    display: none;
+  }
 }
 
 .nav-link {
-  &_grey {
+  &--grey {
     color: $color-grey;
   }
 }

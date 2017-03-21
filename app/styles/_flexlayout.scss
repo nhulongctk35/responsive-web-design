@@ -1,13 +1,13 @@
 .grid-container {
   display: flex;
-}
 
-.grid-column {
-  flex-direction: column;
-}
+  &--center {
+    align-items: baseline;
+  }
 
-.grid-container__center {
-  align-items: baseline;
+  &--column {
+    flex-direction: column;
+  }
 }
 
 .grid-item__link-icon {

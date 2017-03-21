@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="/bower_components/simple-line-icons/css/simple-line-icons.css">
   <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
   <header id="header">
-    <nav class="nav nav_fixed_top nav_theme_white">
+    <nav class="nav nav--fixed-top theme--white">
       <div class="container">
-        <div class="nav-grid-container nav-grid-center grid-container">
+        <div class="nav-grid nav-grid--center grid-container">
           <div class="nav-header">
             <a href="#" class="nav-header__brand">
               <mark class="nav-header__mark">r</mark>wd
@@ -24,28 +26,28 @@
           </div>
           <div class="nav_right nav-content">
             <ul class="nav-list grid-container">
-              <li class="nav-list__item nav-item_icon">
-                <a href="#" class="nav-list__link nav-link_grey">
-                  <i class="icon-menu"></i>
+              <li class="nav-list__item nav-item--icon">
+                <a href="#" class="nav-list__link nav-link--grey">
+                  <i class="link-icon"></i>
                 </a>
               </li>
               <li class="nav-list__item">
-                <a href="#home" class="nav-list__link nav-link_grey">Home</a>
+                <a href="#home" class="nav-list__link nav-link--grey">Home</a>
               </li>
               <li class="nav-list__item">
-                <a href="#explore" class="nav-list__link nav-link_grey">Explore</a>
+                <a href="#explore" class="nav-list__link nav-link--grey">Explore</a>
               </li>
               <li class="nav-list__item">
-                <a href="#pricing" class="nav-list__link nav-link_grey">Pricing</a>
+                <a href="#pricing" class="nav-list__link nav-link--grey">Pricing</a>
               </li>
               <li class="nav-list__item">
-                <a href="#services" class="nav-list__link nav-link_grey">Services</a>
+                <a href="#services" class="nav-list__link nav-link--grey">Services</a>
               </li>
               <li class="nav-list__item">
-                <a href="#team" class="nav-list__link nav-link_grey">Team</a>
+                <a href="#team" class="nav-list__link nav-link--grey">Team</a>
               </li>
-              <li class="nav-list__item nav-item_border">
-                <a href="#" class="nav-list__link nav-link_grey">Sign up free</a>
+              <li class="nav-list__item nav-item--border">
+                <a href="#" class="nav-list__link nav-link--grey">Sign up free</a>
               </li>
             </ul>
           </div>
@@ -56,11 +58,11 @@
     </nav>
   </header>
   <main id="content">
-    <section id="home" class="home home_full_height home-bg-grey grid-container">
+    <section id="home" class="home home--full-height theme--grey grid-container">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-header_title home-header__title uppercase">Rwd - responsive web design</h2>
-          <p class="section-header__content home-header__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+        <div class="section-header home-header">
+          <h2 class="section-header__title home-header__title uppercase">Rwd - responsive web design</h2>
+          <p class="section-header__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
             dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
         </div>
@@ -72,45 +74,43 @@
         <!-- end session-content -->
       </div>
     </section>
-    <!-- end #home -->
     <section id="explore">
       <div class="section-header container">
         <h2 class="section-header__title capitalize">Explore our products</h2>
         <p class="section-header__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
           dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
-        <div class="line section_line line_green line_center"></div>
+        <div class="line section_line line--green line--center"></div>
       </div>
       <!-- end section-header -->
-      <div class="section-content explore-bg-dark-white">
+      <div class="section-content theme--dark-white">
         <div class="grid-container explore-grid-container container">
           <div class="grid-item">
-            <img class="grid-item__image-product" src="images/work1.png" alt="Product work">
+            <img class="grid-item__image" src="images/work1.png" alt="Product work">
           </div>
           <div class="grid-item">
-            <div class="product-list grid-container grid-column">
-              <div class="grid-item product-item">
+            <div class="product-list grid-container grid-container--column">
+              <div class="product-item">
                 <div class="product-header grid-container">
-                  <a class="product-header__icon grid-item__link-icon" href="#"><i class="icon-people"></i></a>
+                  <a class="grid-item__link-icon" href="#"><i class="icon-people"></i></a>
                   <h3 class="product-header__name">Real project for real solutions</h3>
                 </div>
                 <p class="product-item__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                   dolor. Aenean massa.
                 </p>
               </div>
-              <div class="grid-item product-item">
+              <div class="product-item">
                 <div class="product-header grid-container">
-                  <a class="product-header__icon grid-item__link-icon" href="#"><i class="icon-camrecorder"></i></a>
+                  <a class="grid-item__link-icon" href="#"><i class="icon-camrecorder"></i></a>
                   <h3 class="product-header__name">Real project for real solutions</h3>
                 </div>
                 <p class="product-header__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                   dolor. Aenean massa.
                 </p>
               </div>
-
-              <div class="grid-item product-item">
+              <div class="product-item">
                 <div class="product-header grid-container">
-                  <a class="product-header__icon grid-item__link-icon" href="#"><i class="icon-shield"></i></a>
+                  <a class="grid-item__link-icon" href="#"><i class="icon-shield"></i></a>
                   <h3 class="product-header__name">Real project for real solutions</h3>
                 </div>
                 <p class="product-header__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
@@ -125,20 +125,20 @@
       </div>
     </section>
     <!-- end #explore -->
-    <section id="pricing" class="price-bg-light-green">
-      <div class="container grid-container grid-column">
+    <section id="pricing" class="theme--light-green">
+      <div class="container grid-container grid-container--column">
         <div class="section-header">
           <h2 class="section-header__title capitalize">Plans built for every one</h2>
           <p class="section-header__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
             dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
-          <div class="line section_line line_green line_center"></div>
+          <div class="line section_line line--green line--center"></div>
         </div>
         <!-- end section-header -->
         <div class="section-content">
           <div class="container">
             <div class="price-container grid-container">
-              <div class="grid-item price-box price-box_container grid-container grid-column">
+              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
                 <div class="price-type">
                   <h4 class="price-type__name uppercase">Starter</h4>
                 </div>
@@ -151,9 +151,9 @@
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-agree price__btn uppercase">select plan</button>
+                <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
               </div>
-              <div class="grid-item price-box price-box_container grid-container grid-column">
+              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
                 <div class="price-type">
                   <h4 class="price-type__name uppercase">Basic</h4>
                 </div>
@@ -166,12 +166,12 @@
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-agree price__btn uppercase">select plan</button>
+                <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
               </div>
-              <div class="grid-item price-box price-box_container grid-container grid-column">
+              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
                 <div class="price-type">
-                  <h4 class="price-type__name price-type_offer uppercase">Pro</h4>
-                  <span class="price-type__offer uppercase text-mark">Best Offer</span>
+                  <h4 class="price-type__name uppercase">Pro</h4>
+                  <span class="uppercase text-mark">Best Offer</span>
                 </div>
                 <div class="price-month">
                   <span class="price-month__currency">$</span>
@@ -182,9 +182,9 @@
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-success price__btn uppercase">select plan</button>
+                <button class="btn btn-md btn-success price-box__btn uppercase">select plan</button>
               </div>
-              <div class="grid-item price-box price-box_container grid-container grid-column">
+              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
                 <div class="price-type">
                   <h4 class="price-type__name uppercase">Unlimited</h4>
                 </div>
@@ -197,10 +197,10 @@
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-agree price__btn uppercase">select plan</button>
+                <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
               </div>
             </div>
-            <!-- end price-list-->
+            <!-- end pric-elist-->
           </div>
           <!-- end container -->
         </div>
@@ -214,13 +214,13 @@
     </section>
     <!-- end #pricing -->
     <section id="services">
-      <div class="container grid-container grid-column">
+      <div class="container grid-container grid-container--column">
         <div class="section-header">
           <h2 class="section-header__title capitalize">We offer services</h2>
           <p class="section-header__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
             dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
-          <div class="line section_line line_green line_center"></div>
+          <div class="line section_line line--green line--center"></div>
         </div>
         <!-- end section-header -->
         <div class="section-content">
@@ -288,14 +288,14 @@
       </div>
     </section>
     <!-- end #services -->
-    <section id="team" class="price-bg-light-green">
+    <section id="team" class="theme--light-green">
       <div class="container">
         <div class="section-header">
           <h2 class="section-header_title capitalize">Meet the team</h2>
           <p class="section-header__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
             dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
-          <div class="line section_line line_green line_center"></div>
+          <div class="line section_line line--green line--center"></div>
         </div>
         <!-- end section-header -->
         <div class="section-content">
@@ -315,23 +315,23 @@
               <div class="team-contact social-link">
                 <ul class="social-link-list list-inline no-stype-type">
                   <li class="social-item">
-                    <a class="social-item__link" href="#facebook"><i class="icon-social-facebook"></i>
+                    <a class="social-item__link link--black" href="#facebook"><i class="icon-social-facebook"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#twitter"><i class="icon-social-twitter"></i>
+                    <a class="social-item__link link--black" href="#twitter"><i class="icon-social-twitter"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#dribble"><i class="icon-social-dribbble"></i>
+                    <a class="social-item__link link--black" href="#dribble"><i class="icon-social-dribbble"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#dropbox"><i class="icon-social-dropbox"></i>
+                    <a class="social-item__link link--black" href="#dropbox"><i class="icon-social-dropbox"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#reddit"><i class="icon-social-reddit"></i>
+                    <a class="social-item__link link--black" href="#reddit"><i class="icon-social-reddit"></i>
                     </a>
                   </li>
                 </ul>
@@ -344,7 +344,7 @@
                 <span class="team-header__title text-mark">Co-Founder, Leader developer</span>
               </div>
               <div class="team-content">
-                <p class="team-content__intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                <p class="team-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus.
                 </p>
@@ -352,23 +352,23 @@
               <div class="team-contact social-link">
                 <ul class="social-link-list list-inline no-stype-type">
                   <li class="social-item">
-                    <a class="social-item__link" href="#facebook"><i class="icon-social-facebook large-icons"></i>
+                    <a class="social-item__link link--black" href="#facebook"><i class="icon-social-facebook"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#twitter"><i class="icon-social-twitter large-icons"></i>
+                    <a class="social-item__link link--black" href="#twitter"><i class="icon-social-twitter"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#dribble"><i class="icon-social-dribbble large-icons"></i>
+                    <a class="social-item__link link--black" href="#dribble"><i class="icon-social-dribbble"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#dropbox"><i class="icon-social-dropbox large-icons"></i>
+                    <a class="social-item__link link--black" href="#dropbox"><i class="icon-social-dropbox"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#reddit"><i class="icon-social-reddit large-icons"></i>
+                    <a class="social-item__link link--black" href="#reddit"><i class="icon-social-reddit"></i>
                     </a>
                   </li>
                 </ul>
@@ -381,7 +381,7 @@
                 <span class="team-header__title text-mark">Co-Founder, Leader developer</span>
               </div>
               <div class="team-content">
-                <p class="team-content__intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                <p class="team-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus.
                 </p>
@@ -389,23 +389,23 @@
               <div class="team-contact social-link">
                 <ul class="social-link-list list-inline no-stype-type">
                   <li class="social-item">
-                    <a class="social-item__link" href="#facebook"><i class="icon-social-facebook large-icons"></i>
+                    <a class="social-item__link link--black" href="#facebook"><i class="icon-social-facebook"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#twitter"><i class="icon-social-twitter large-icons"></i>
+                    <a class="social-item__link link--black" href="#twitter"><i class="icon-social-twitter"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#dribble"><i class="icon-social-dribbble large-icons"></i>
+                    <a class="social-item__link link--black" href="#dribble"><i class="icon-social-dribbble"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#dropbox"><i class="icon-social-dropbox large-icons"></i>
+                    <a class="social-item__link link--black" href="#dropbox"><i class="icon-social-dropbox"></i>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-item__link" href="#reddit"><i class="icon-social-reddit large-icons"></i>
+                    <a class="social-item__link link--black" href="#reddit"><i class="icon-social-reddit"></i>
                     </a>
                   </li>
                 </ul>
@@ -417,21 +417,20 @@
       </div>
     </section>
     <!-- end #team -->
-</main>
-<!-- end main content -->
-<footer class="footer footer-bg-dark_green">
+  </main>
+  <footer class="footer theme--dark_green">
   <div class="container">
     <div class="grid-container footer__grid-container">
       <div class="grid-item grid-item__full-width">
         <div class="infor-header">
           <h2 class="infor-header__name">About us</h2>
         </div>
-        <div class="line section_line line_green"></div>
+        <div class="line section_line line--green"></div>
         <div class="infor-content">
           <p class="infor-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
-          <div class="line section_line line_green"></div>
+          <div class="line section_line line--green"></div>
           <p class="infor-content__desc">@Lorem ipsum dolor sit amet <br>
             All Rights Reserved
           </p>
@@ -441,22 +440,22 @@
         <div class="infor-header">
           <h2 class="infor-header__name">Our Address</h2>
         </div>
-        <div class="line section_line line_green"></div>
+        <div class="line section_line line--green"></div>
         <div class="infor-content">
-          <div class="grid-container grid-column">
-            <div class="grid-item grid-container grid-container__center">
+          <div class="grid-container grid-container--column">
+            <div class="grid-item grid-container grid-container--center">
               <a class="grid-item__link-icon"><i class="icon-location-pin"></i></a>
               <address>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</address>
             </div>
-            <div class="grid-item grid-container grid-container__center">
+            <div class="grid-item grid-container grid-container--center">
               <a class="grid-item__link-icon"><i class="icon-phone"></i></a>
               <p>+1235 2355 98</p>
             </div>
-            <div class="grid-item grid-container grid-container__center">
+            <div class="grid-item grid-container grid-container--center">
               <a class="grid-item__link-icon"><i class="icon-envelope"></i></a>
               <span>info@yoursite.com</span>
             </div>
-            <div class="grid-item grid-container grid-container__center">
+            <div class="grid-item grid-container grid-container--center">
               <a class="grid-item__link-icon"><i class="icon-globe"></i></a>
               <p>www.yoursite.com</p>
             </div>
@@ -465,7 +464,7 @@
         <div class="infor-header">
           <h2 class="infor-header__name">Connect with Us</h2>
         </div>
-        <div class="line section_line line_green"></div>
+        <div class="line section_line line--green"></div>
         <div class="infor-content">
           <div class="social-link social-link--">
             <ul class="social-link-list list-inline no-stype-type">
@@ -497,7 +496,7 @@
         <div class="infor-header">
           <h2 class="infor-header__name">Drop us a line</h2>
         </div>
-        <div class="line section_line line_green"></div>
+        <div class="line section_line line--green"></div>
         <div class="infor-content">
           <form action="#" method="post" class="contact-form">
             <div class="form-group">
@@ -527,8 +526,7 @@
       </div>
     </div>
   </div>
-</footer>
-<!-- end footer -->
+  </footer>
 <script src="scripts/main.js"></script>
 </body>
 </html>

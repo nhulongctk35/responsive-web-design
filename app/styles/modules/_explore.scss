@@ -1,4 +1,8 @@
-.explore-bg-dark-white {
+#explore {
+  padding-bottom: 0;
+}
+
+.theme--dark-white {
   background-color: $color-bg-explore;
   align-items: center;
 }
@@ -10,16 +14,20 @@
   padding-bottom: 100px;
 }
 
-.grid-item__image-product {
-  width: 100%;
-}
-
 .product-list {
   padding-left: 100px;
   text-align: left;
   justify-content: space-around;
 }
 
-.product-header__name {
-  margin: 0;
+.grid-item {
+  &__image {
+    width: 100%;
+  }
+}
+
+.product-header {
+  &__name {
+    margin: 0;
+  }
 }
