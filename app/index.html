@@ -17,7 +17,7 @@
 <body>
   <header id="header">
     <nav class="nav nav--fixed-top theme--white">
-      <div class="container">
+      <div class="container container--nopadding">
         <div class="nav-grid nav-grid--center grid-container">
           <div class="nav-header">
             <a href="#" class="nav-header__brand">
@@ -89,7 +89,7 @@
             <img class="grid-item__image" src="images/work1.png" alt="Product work">
           </div>
           <div class="grid-item">
-            <div class="product-list grid-container grid-container--column">
+            <div class="product-list grid-container">
               <div class="product-item">
                 <div class="product-header grid-container">
                   <a class="grid-item__link-icon" href="#"><i class="icon-people"></i></a>
@@ -120,11 +120,9 @@
             </div>
             <!-- end grid-container -->
           </div>
-          <!-- end grid-item -->
         </div>
       </div>
     </section>
-    <!-- end #explore -->
     <section id="pricing" class="theme--light-green">
       <div class="container grid-container grid-container--column">
         <div class="section-header">
@@ -138,66 +136,74 @@
         <div class="section-content">
           <div class="container">
             <div class="price-container grid-container">
-              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
-                <div class="price-type">
-                  <h4 class="price-type__name uppercase">Starter</h4>
+              <div class="price-box price-grid-container grid-container grid-container--column">
+                <div class="price-box__type">
+                  <h4 class="price-box__name uppercase">Starter</h4>
                 </div>
-                <div class="price-month">
-                  <span class="price-month__currency">$</span>
-                  <span class="price-month__amount">9</span>
+                <div class="price-box__month">
+                  <span class="price-box__currency">$</span>
+                  <span class="price-box__amount">9</span>
                 </div>
-                <div class="price-content">
+                <div class="price-box__content">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
+                <div class="price-link">
+                  <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
+                </div>
               </div>
-              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
-                <div class="price-type">
-                  <h4 class="price-type__name uppercase">Basic</h4>
+              <div class="price-box price-grid-container grid-container grid-container--column">
+                <div class="price-box__type">
+                  <h4 class="price-box__name uppercase">Basic</h4>
                 </div>
-                <div class="price-month">
-                  <span class="price-month__currency">$</span>
-                  <span class="price-month__amount">27</span>
+                <div class="price-box__month">
+                  <span class="price-box__currency">$</span>
+                  <span class="price-box__amount">27</span>
                 </div>
-                <div class="price-content">
+                <div class="price-box__content">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
+                <div class="price-link">
+                  <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
+                </div>
               </div>
-              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
-                <div class="price-type">
-                  <h4 class="price-type__name uppercase">Pro</h4>
+              <div class="price-box price-grid-container grid-container grid-container--column">
+                <div class="price-box__type">
+                  <h4 class="price-box__name uppercase">Pro</h4>
                   <span class="uppercase text-mark">Best Offer</span>
                 </div>
-                <div class="price-month">
-                  <span class="price-month__currency">$</span>
-                  <span class="price-month__amount">74</span>
+                <div class="price-box__month">
+                  <span class="price-box__currency">$</span>
+                  <span class="price-box__amount">74</span>
                 </div>
-                <div class="price-content">
+                <div class="price-box__content">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-success price-box__btn uppercase">select plan</button>
+                <div class="price-link">
+                  <button class="btn btn-md btn-success price-box__btn uppercase">select plan</button>
+                </div>
               </div>
-              <div class="grid-item price-box price-grid-container grid-container grid-container--column">
-                <div class="price-type">
-                  <h4 class="price-type__name uppercase">Unlimited</h4>
+              <div class="price-box price-grid-container grid-container grid-container--column">
+                <div class="price-box__type">
+                  <h4 class="price-box__name uppercase">Unlimited</h4>
                 </div>
-                <div class="price-month">
-                  <span class="price-month__currency">$</span>
-                  <span class="price-month__amount">140</span>
+                <div class="price-box__month">
+                  <span class="price-box__currency">$</span>
+                  <span class="price-box__amount">140</span>
                 </div>
-                <div class="price-content">
+                <div class="price-box__content">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                     dolor. Aenean massa.
                   </p>
                 </div>
-                <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
+                <div class="price-link">
+                  <button class="btn btn-md btn-agree price-box__btn uppercase">select plan</button>
+                </div>
               </div>
             </div>
             <!-- end pric-elist-->
@@ -212,7 +218,6 @@
       </footer>
     </div>
     </section>
-    <!-- end #pricing -->
     <section id="services">
       <div class="container grid-container grid-container--column">
         <div class="section-header">
@@ -225,7 +230,7 @@
         <!-- end section-header -->
         <div class="section-content">
           <div class="grid-container service-grid-container">
-            <div class="grid-item service-box grid-container">
+            <div class="service-box grid-container">
               <a class="service-box__icon grid-item__link-icon"><i class="icon-chemistry icon-large"></i></a>
               <div class="service-content">
                 <h3 class="service-content__name capitalize">Hand-crafted with Detailed</h3>
@@ -234,7 +239,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid-item service-box grid-container">
+            <div class="service-box grid-container">
               <a class="service-box__icon grid-item__link-icon"><i class="icon-trophy icon-large"></i></a>
               <div class="service-content">
                 <h3 class="service-content__name capitalize">Award-winning landing page</h3>
@@ -243,7 +248,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid-item service-box grid-container">
+            <div class="service-box grid-container">
               <a class="service-box__icon grid-item__link-icon"><i class="icon-people icon-large"></i></a>
               <div class="service-content">
                 <h3 class="service-content__name capitalize">Satisfied & happy clients</h3>
@@ -252,7 +257,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid-item service-box grid-container">
+            <div class="service-box grid-container">
               <a class="service-box__icon grid-item__link-icon"><i class="icon-energy icon-large"></i></a>
               <div class="service-content">
                 <h3 class="service-content__name capitalize">Light and fast</h3>
@@ -261,7 +266,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid-item service-box grid-container">
+            <div class="service-box grid-container">
               <a class="service-box__icon grid-item__link-icon"><i class="icon-cursor icon-large"></i></a>
               <div class="service-content">
                 <h3 class="service-content__name capitalize">Sleek and smooth animation</h3>
@@ -270,7 +275,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid-item service-box grid-container">
+            <div class="service-box grid-container">
               <a class="service-box__icon grid-item__link-icon"><i class="icon-screen-desktop icon-large"></i></a>
               <div class="service-content">
                 <h3 class="service-content__name capitalize">Looks amazing on devices</h3>
@@ -287,7 +292,6 @@
         </footer>
       </div>
     </section>
-    <!-- end #services -->
     <section id="team" class="theme--light-green">
       <div class="container">
         <div class="section-header">
@@ -300,14 +304,14 @@
         <!-- end section-header -->
         <div class="section-content">
           <div class="grid-container team-grid-container">
-            <div class="grid-item team-box">
-              <div class="team-header">
-                <img class="team-header__thubnail" src="images/person1.png" alt="person 1">
-                <h3 class="team-header__name uppercase">Roger garfield</h3>
-                <span class="team-header__title text-mark">Co-Founder, Leader developer</span>
+            <div class="team-box">
+              <div class="team-box__header">
+                <img class="team-box__thubnail" src="images/person1.png" alt="person 1">
+                <h3 class="team-box__name uppercase">Roger garfield</h3>
+                <span class="team-box__title text-mark">Co-Founder, Leader developer</span>
               </div>
-              <div class="team-content">
-                <p class="team-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              <div class="team-box__content">
+                <p class="team-box__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus.
                 </p>
@@ -337,14 +341,14 @@
                 </ul>
               </div>
             </div>
-            <div class="grid-item team-box">
-              <div class="team-header">
-                <img class="team-header__thubnail" src="images/person2.png" alt="person 2">
-                <h3 class="team-header__name uppercase">Roger garfield</h3>
-                <span class="team-header__title text-mark">Co-Founder, Leader developer</span>
+            <div class="team-box">
+              <div class="team-box__header">
+                <img class="team-box__thubnail" src="images/person2.png" alt="person 2">
+                <h3 class="team-box__name uppercase">Roger garfield</h3>
+                <span class="team-box__title text-mark">Co-Founder, Product Designer</span>
               </div>
-              <div class="team-content">
-                <p class="team-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              <div class="team-box__content">
+                <p class="team-box__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus.
                 </p>
@@ -374,19 +378,19 @@
                 </ul>
               </div>
             </div>
-            <div class="grid-item team-box">
-              <div class="team-header">
-                <img class="team-header__thubnail" src="images/person3.png" alt="person 3">
-                <h3 class="team-header__name uppercase">Roger garfield</h3>
-                <span class="team-header__title text-mark">Co-Founder, Leader developer</span>
+            <div class="team-box">
+              <div class="team-box__header">
+                <img class="team-box__thubnail" src="images/person3.png" alt="person 3">
+                <h3 class="team-box__name uppercase">Roger garfield</h3>
+                <span class="team-box__title text-mark">Full Stack Developer</span>
               </div>
-              <div class="team-content">
-                <p class="team-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              <div class="team-box__content">
+                <p class="team-box__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus.
                 </p>
               </div>
-              <div class="team-contact social-link">
+              <div class="team-box__contact social-link">
                 <ul class="social-link-list list-inline no-stype-type">
                   <li class="social-item">
                     <a class="social-item__link link--black" href="#facebook"><i class="icon-social-facebook"></i>
@@ -416,117 +420,113 @@
         <!-- end section-content -->
       </div>
     </section>
-    <!-- end #team -->
   </main>
   <footer class="footer theme--dark_green">
-  <div class="container">
-    <div class="grid-container footer__grid-container">
-      <div class="grid-item grid-item__full-width">
-        <div class="infor-header">
-          <h2 class="infor-header__name">About us</h2>
-        </div>
-        <div class="line section_line line--green"></div>
-        <div class="infor-content">
-          <p class="infor-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
+    <div class="container">
+      <div class="grid-container footer__grid-container">
+        <div class="grid-item--full-width">
+          <div class="infor-header">
+            <h2 class="infor-header__name">About us</h2>
+          </div>
           <div class="line section_line line--green"></div>
-          <p class="infor-content__desc">@Lorem ipsum dolor sit amet <br>
-            All Rights Reserved
-          </p>
+          <div class="infor-content">
+            <p class="infor-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <div class="line section_line line--green"></div>
+            <p class="infor-content__desc">&copy;Lorem ipsum dolor sit amet <br>
+              All Rights Reserved
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="grid-item grid-item__full-width">
-        <div class="infor-header">
-          <h2 class="infor-header__name">Our Address</h2>
-        </div>
-        <div class="line section_line line--green"></div>
-        <div class="infor-content">
-          <div class="grid-container grid-container--column">
-            <div class="grid-item grid-container grid-container--center">
-              <a class="grid-item__link-icon"><i class="icon-location-pin"></i></a>
-              <address>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</address>
+        <div class="grid-item--full-width">
+          <div class="infor-header">
+            <h2 class="infor-header__name">Our Address</h2>
+          </div>
+          <div class="line section_line line--green"></div>
+          <div class="infor-content">
+            <div class="grid-container grid-container--column">
+              <div class="grid-container grid-container--center">
+                <a class="grid-item__link-icon"><i class="icon-location-pin"></i></a>
+                <address>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</address>
+              </div>
+              <div class="grid-container grid-container--center">
+                <a class="grid-item__link-icon"><i class="icon-phone"></i></a>
+                <p>+1235 2355 98</p>
+              </div>
+              <div class="grid-container grid-container--center">
+                <a class="grid-item__link-icon"><i class="icon-envelope"></i></a>
+                <span>info@yoursite.com</span>
+              </div>
+              <div class="grid-container grid-container--center">
+                <a class="grid-item__link-icon"><i class="icon-globe"></i></a>
+                <p>www.yoursite.com</p>
+              </div>
             </div>
-            <div class="grid-item grid-container grid-container--center">
-              <a class="grid-item__link-icon"><i class="icon-phone"></i></a>
-              <p>+1235 2355 98</p>
-            </div>
-            <div class="grid-item grid-container grid-container--center">
-              <a class="grid-item__link-icon"><i class="icon-envelope"></i></a>
-              <span>info@yoursite.com</span>
-            </div>
-            <div class="grid-item grid-container grid-container--center">
-              <a class="grid-item__link-icon"><i class="icon-globe"></i></a>
-              <p>www.yoursite.com</p>
+          </div>
+          <div class="infor-header">
+            <h2 class="infor-header__name">Connect with Us</h2>
+          </div>
+          <div class="line section_line line--green"></div>
+          <div class="infor-content">
+            <div class="social-link social-link--">
+              <ul class="social-link-list list-inline no-stype-type">
+                <li class="social-item">
+                  <a href="#facebook" class="social-item__link"><i class="icon-social-facebook large-icons"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#twitter" class="social-item__link"><i class="icon-social-twitter large-icons"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#dribble" class="social-item__link"><i class="icon-social-dribbble large-icons"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#dropbox" class="social-item__link"><i class="icon-social-dropbox large-icons"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#reddit" class="social-item__link"><i class="icon-social-reddit large-icons"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="infor-header">
-          <h2 class="infor-header__name">Connect with Us</h2>
-        </div>
-        <div class="line section_line line--green"></div>
-        <div class="infor-content">
-          <div class="social-link social-link--">
-            <ul class="social-link-list list-inline no-stype-type">
-              <li class="social-item">
-                <a href="#facebook" class="social-item__link"><i class="icon-social-facebook large-icons"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#twitter" class="social-item__link"><i class="icon-social-twitter large-icons"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#dribble" class="social-item__link"><i class="icon-social-dribbble large-icons"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#dropbox" class="social-item__link"><i class="icon-social-dropbox large-icons"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#reddit" class="social-item__link"><i class="icon-social-reddit large-icons"></i>
-                </a>
-              </li>
-            </ul>
+        <div class="grid-item--full-width">
+          <div class="infor-header">
+            <h2 class="infor-header__name">Drop us a line</h2>
           </div>
-        </div>
-      </div>
-      <div class="grid-item grid-item__full-width">
-        <div class="infor-header">
-          <h2 class="infor-header__name">Drop us a line</h2>
-        </div>
-        <div class="line section_line line--green"></div>
-        <div class="infor-content">
-          <form action="#" method="post" class="contact-form">
-            <div class="form-group">
-              <input class="form-group__input form-group__name" type="text" placeholder="Name" name="name">
-            </div>
-            <div class="form-group">
-              <label>
-                <input class="form-group__input form-group__gender" type="radio" name="gender" checked="checked" value="male">
-                Male
-              </label>
-              <label>
-                <input class="form-group__input form-group__gender" type="radio" name="gender" value="female">
-                Female              
-              </label>
-            </div>
-            <div class="form-group">
-              <input class="form-group__input form-group__email form-text" type="text" placeholder="Email" name="email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-group__textarea textarea__vresize form-text form-group__message" name="message" cols="30" rows="10"></textarea>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-md btn-danger uppercase" type="submit">Send message</button>
-            </div>
-          </form>
+          <div class="line section_line line--green"></div>
+          <div class="infor-content">
+            <form action="#" method="post" class="contact-form">
+              <div class="form-group">
+                <input class="form-group__input form-group__name" type="text" placeholder="Name" name="name" required>
+              </div>
+              <div class="form-group">
+                <input id="male" class="form-group__input form-group__gender" type="radio" name="gender" checked="checked" value="male">
+                <label for="male">Male</label>
+                
+                <input id="female" class="form-group__input form-group__gender" type="radio" name="gender" value="female">
+                <label for="female">Female </label>
+              </div>
+              <div class="form-group">
+                <input class="form-group__input form-group__email form-text" type="email" placeholder="Email" name="email" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-group__textarea textarea__vresize form-text form-group__message" placeholder="Message" name="message" cols="30" rows="10" required></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-md btn-danger uppercase" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </footer>
-<script src="scripts/main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

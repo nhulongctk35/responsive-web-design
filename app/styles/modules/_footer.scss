@@ -1,3 +1,8 @@
+.theme--dark_green {
+  background: $color-bg-footer;
+  color: $color-footer;
+}
+
 .footer {
   padding: $session-padding;
 
@@ -6,13 +11,10 @@
   }
 }
 
-.theme--dark_green {
-  background: $color-bg-footer;
-  color: $color-footer;
-}
-
-.grid-item__full-width {
-  width: 100%;
+.grid-item {
+  &--full-width {
+    width: 100%;
+  }
 }
 
 .infor-header {
@@ -27,20 +29,21 @@
   &__input,
   &__textarea {
     color: $color-footer;
+    background-color: $input-bg-color;
     border: none;
   }
-}
 
-input[type="radio"] {
-  display: none;
-
-  &:checked + label:before {
-    content: "\2713";
-    color: $color-link;
-    font-size: 10px;
-    text-align: center;
-    line-height: 15px;
-    border: 1px solid $color-link;
+  &__gender {
+    display: none;
+    
+    &:checked + label:before {
+      content: "\2713";
+      color: $color-link;
+      font-size: 10px;
+      text-align: center;
+      line-height: 15px;
+      border: 1px solid $color-link;
+    }
   }
 }
 

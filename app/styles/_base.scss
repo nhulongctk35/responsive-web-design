@@ -19,6 +19,11 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 20px;
+
+  &--nopadding {
+    padding: 0;
+  }
 }
 
 img {
@@ -41,10 +46,6 @@ a {
 
 .danger {
   color: $color-red;
-}
-
-.section-content {
-  padding: 20px 0;
 }
 
 section {
@@ -139,7 +140,7 @@ input {
 
 .icon-large {
   font-size: 22pt;
-}s
+}
 
 .social-link {
   &--green {
@@ -149,4 +150,10 @@ input {
 
 .social-link--green {
   color: $color-link;
+}
+
+.link {
+  &--black {
+    color: $color-dark-black;
+  }
 }
