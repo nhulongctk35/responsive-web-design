@@ -1,8 +1,6 @@
-/*==========  Mobile First Method  ==========*/
-
 /* Custom, iPhone Retina */
-@media (min-width: $screen-xsm) {
 
+@media (min-width: $screen-xsm) {
   body {
     font-size: $font-size-small;
   }
@@ -35,8 +33,7 @@
 }
 
 /* Extra Small Devices, Phones */
-@media (min-width : $screen-xs) {
-
+@media (min-width: $screen-xs) {
   body {
     font-size: $font-size-small;
   }
@@ -69,8 +66,7 @@
 }
 
 /* Small Devices, Tablets */
-@media (min-width : $screen-sm) {
-
+@media (min-width: $screen-sm) {
   body {
     font-size: $font-size-base;
   }
@@ -103,8 +99,7 @@
 }
 
 /* Medium Devices, Desktops */
-@media (min-width : $screen-md) {
-
+@media (min-width: $screen-md) {
   body {
     font-size: $font-size-base;
   }
@@ -137,7 +132,7 @@
 }
 
 /* Large Devices, Wide Screens */
-@media (min-width : $screen-lg) {
+@media (min-width: $screen-lg) {
   body {
     font-size: $font-size-large;
   }
