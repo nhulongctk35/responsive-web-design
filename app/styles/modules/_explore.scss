@@ -18,11 +18,23 @@
   padding-left: 100px;
   text-align: left;
   justify-content: space-around;
+
+  @media screen and (min-width: $screen-xs) {
+    padding-left: 0;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 
 .grid-item {
   &__image {
     width: 100%;
+    @media screen and (min-width: $screen-xs) {
+      margin-bottom: 50px;   
+    }
   }
 }
 

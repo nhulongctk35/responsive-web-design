@@ -13,6 +13,9 @@
 }
 
 .home-content {
+  position: relative;
+  top: 20px;
+  
   &__link {
     margin: 0 10px;
   }

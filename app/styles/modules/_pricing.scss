@@ -4,9 +4,14 @@
 
 .price-container {
   justify-content: space-between;
+
+  @media screen and (min-width: $screen-xs) {
+    flex-wrap: wrap;
+  }
 }
 
 .price-grid-container {
+  flex-direction: column;
   padding: 20px 10px;
   align-items: center;
   justify-content: space-between;
@@ -14,13 +19,13 @@
 
 .price-box {
   background-color: $color-white;
-  width: 23.33%;
-  margin-right: 10px;
+ 
   @include border-radius($border-radius-box);
   @include box-shadow(0 0 20px -10px $color-offblack);
-  
-  &:last-child {
-    margin: 0;
+
+  @media screen and (min-width: $screen-xs) {
+    margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   &__type {
