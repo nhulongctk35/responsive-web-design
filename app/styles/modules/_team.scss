@@ -25,6 +25,14 @@
     }
   }
 
+  @media screen and (min-width: $screen-md) {
+    flex: 0 1 32%;
+
+    &:last-child {
+      flex-basis: 32%;
+    }
+  }
+
   &:last-child {
     margin-right: 0;
   }

@@ -20,6 +20,10 @@
     @media screen and (min-width: $screen-sm) {
       flex: 0 1 100%;
     }
+
+    @media screen and (min-width: $screen-md) {
+      flex: 0 1 50%;
+    }
   }
 }
 

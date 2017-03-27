@@ -32,6 +32,10 @@
     width: 49%;
   }
 
+  @media screen and (min-width: $screen-md) {
+    flex: 0 1 24%;
+  }
+
   &__type {
     height: 100%;
   }

@@ -36,6 +36,14 @@
     flex-wrap: wrap;
   }
 
+  @media screen and (min-width: $screen-md) {
+    margin-left: 100px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    flex-direction: column;
+  }
+
   &__item {
 
     @media screen and (min-width: $screen-sm) {
@@ -49,6 +57,7 @@
 .grid-item {
   &__image {
     width: 100%;
+    
     @media screen and (min-width: $screen-xs) {
       margin-bottom: 50px;   
     }
