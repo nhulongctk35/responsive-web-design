@@ -22,14 +22,6 @@
   .nav-item--icon {
     display: inline-block;
   }
-
-  .explore-grid-container {
-    flex-direction: column;
-  }
-
-  .product-list {
-    flex-direction: row;
-  }
 }
 
 /* Extra Small Devices, Phones */
@@ -54,14 +46,6 @@
     li.menu-icon {
       display: inline-block;
     }
-  }
-
-  .explore-grid-container {
-    flex-direction: column;
-  }
-
-  .product-list {
-    flex-direction: row;
   }
 }
 
@@ -88,14 +72,6 @@
       display: none;
     }
   }
-
-  .explore-grid-container {
-    flex-direction: row;
-  }
-
-  .product-list {
-    flex-direction: column;
-  }
 }
 
 /* Medium Devices, Desktops */
@@ -121,14 +97,6 @@
       display: none;
     }
   }
-
-  .explore-grid-container {
-    flex-direction: row;
-  }
-
-  .product-list {
-    flex-direction: column;
-  }
 }
 
 /* Large Devices, Wide Screens */
@@ -153,14 +121,6 @@
     li.menu-icon {
       display: none;
     }
-  }
-
-  .explore-grid-container {
-    flex-direction: row;
-  }
-
-  .product-list {
-    flex-direction: column;
   }
 }
 

@@ -7,6 +7,7 @@
   padding: $session-padding;
 
   &__grid-container {
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -14,6 +15,14 @@
 .grid-item {
   &--full-width {
     width: 100%;
+
+    @media screen and (min-width: $screen-sm) {
+      flex: 0 1 50%;
+
+      &:last-child {
+        flex-basis: 100%;
+      }
+    }
   }
 }
 

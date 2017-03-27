@@ -28,6 +28,10 @@
     margin-right: 0px;
   }
 
+  @media screen and (min-width: $screen-sm) {
+    width: 49%;
+  }
+
   &__type {
     height: 100%;
   }

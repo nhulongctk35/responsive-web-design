@@ -10,6 +10,8 @@
   }
 }
 
-.grid-item__link-icon {
-  padding-right: 20px;
+.grid-item {
+  &__link-icon {
+    padding-right: 20px;
+  }
 }

@@ -1,5 +1,6 @@
 .team-grid-container {
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .team-box {
@@ -14,6 +15,14 @@
   @media screen and (min-width: $screen-xs) {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    flex: 0 1 49%;
+
+    &:last-child {
+      flex-basis: 100%;
+    }
   }
 
   &:last-child {

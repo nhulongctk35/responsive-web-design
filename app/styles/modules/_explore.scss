@@ -12,6 +12,14 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 100px;
+
+  @media screen and (min-width: $screen-xs) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    flex-direction: row;
+  }
 }
 
 .product-list {
@@ -26,6 +34,15 @@
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  &__item {
+
+    @media screen and (min-width: $screen-sm) {
+      &:not(:last-child) {
+        flex: 0.5;
+      }
+    }
   }
 }
 
