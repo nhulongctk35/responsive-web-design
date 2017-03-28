@@ -18,6 +18,18 @@
   
   &__link {
     margin: 0 10px;
+
+    @media screen and (min-width: $screen-xsm) {
+      display: block;
+
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: $screen-xs) {
+      display: inline-block;
+    }
   }
 }
 

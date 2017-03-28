@@ -5,6 +5,10 @@
 .price-container {
   justify-content: space-between;
 
+  @media screen and (min-width: $screen-xsm) {
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: $screen-xs) {
     flex-wrap: wrap;
   }
@@ -23,17 +27,20 @@
   @include border-radius($border-radius-box);
   @include box-shadow(0 0 20px -10px $color-offblack);
 
+  @media screen and (min-width: $screen-xsm) {
+    flex: 0 1 100%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
   @media screen and (min-width: $screen-xs) {
+    flex: 0 1 100%;
     margin-bottom: 20px;
     margin-right: 0px;
   }
 
   @media screen and (min-width: $screen-sm) {
-    width: 49%;
-  }
-
-  @media screen and (min-width: $screen-md) {
-    flex: 0 1 24%;
+    flex: 0 1 49%;
   }
 
   &__type {
@@ -46,7 +53,7 @@
   }
 
   &__content {
-    min-height: 150px;
+    /*min-height: 150px;*/
   }
 
   &__btn {

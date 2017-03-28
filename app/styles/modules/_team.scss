@@ -12,21 +12,25 @@
   @include border-radius($border-radius-box);
   @include box-shadow(0 0 20px -10px $color-offblack);
 
-  @media screen and (min-width: $screen-xs) {
+  @media screen and (min-width: $screen-xsm) {
     margin-right: 0;
     margin-bottom: 20px;
   }
 
   @media screen and (min-width: $screen-sm) {
+    -webkit-flex: 0 1 49%;
+    -moz-flex: 0 1 49%;
+    -ms-flex: 0 1 49%;
+    -o-flex: 0 1 49%;
     flex: 0 1 49%;
-
+    
     &:last-child {
       flex-basis: 100%;
     }
   }
 
   @media screen and (min-width: $screen-md) {
-    flex: 0 1 32%;
+    flex: 0 1 32.7%;
 
     &:last-child {
       flex-basis: 32%;

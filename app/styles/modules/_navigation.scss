@@ -45,6 +45,10 @@
     display: block;
     height: 100%;
     padding: 5px 20px;
+
+    @media screen and (min-width: $screen-xsm) {
+      display: none;
+    }
     
     @media screen and (min-width: $screen-xs) {
       display: none;
@@ -79,7 +83,17 @@
   }
 
   &--icon {
-    display: none;
+    @media screen and (min-width: $screen-xsm) {
+      display: inline-block;
+    }
+
+    @media screen and (min-width: $screen-xs) {
+      display: inline-block;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      display: none;
+    }
   }
 }
 
