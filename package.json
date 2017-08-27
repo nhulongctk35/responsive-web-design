@@ -13,7 +13,7 @@
   "author": "kms-technology",
   "repository": {
     "type": "git",
-    "url": "git@git.kms-technology.com:kms-training/fcp-htmlcss.git"
+    "url": "git@git.kms-technology.com:kms-training/fcp-htmlcss.git "
   },
   "devDependencies": {
     "browser-sync": "^2.14.0",
