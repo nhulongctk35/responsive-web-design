@@ -5,4 +5,4 @@ Responsive Web Design
 -  `npm install & bower install`
 
 **Run:**
--  **run server**: `gulp serve`
+-  **run server**: `gulp serve `
