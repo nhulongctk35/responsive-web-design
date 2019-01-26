@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "firma-web",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
+}

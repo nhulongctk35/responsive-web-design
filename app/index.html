@@ -8,8 +8,6 @@
   <title>RWD</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="/bower_components/simple-line-icons/css/simple-line-icons.css">
-  <script src="/bower_components/modernizr/modernizr.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
@@ -32,22 +30,22 @@
                 </a>
               </li>
               <li class="nav-list__item">
-                <a href="#home" class="nav-list__link nav-link--grey">Home</a>
+                <a data-scroll href="#home" class="nav-list__link nav-link--grey">Home</a>
               </li>
               <li class="nav-list__item">
-                <a href="#explore" class="nav-list__link nav-link--grey">Explore</a>
+                <a data-scroll href="#explore" class="nav-list__link nav-link--grey">Explore</a>
               </li>
               <li class="nav-list__item">
-                <a href="#pricing" class="nav-list__link nav-link--grey">Pricing</a>
+                <a data-scroll href="#pricing" class="nav-list__link nav-link--grey">Pricing</a>
               </li>
               <li class="nav-list__item">
-                <a href="#services" class="nav-list__link nav-link--grey">Services</a>
+                <a data-scroll href="#services" class="nav-list__link nav-link--grey">Services</a>
               </li>
               <li class="nav-list__item">
-                <a href="#team" class="nav-list__link nav-link--grey">Team</a>
+                <a data-scroll href="#team" class="nav-list__link nav-link--grey">Team</a>
               </li>
               <li class="nav-list__item nav-item--border">
-                <a href="#" class="nav-list__link nav-link--grey">Sign up free</a>
+                <a data-scroll href="#" class="nav-list__link nav-link--grey">Sign up free</a>
               </li>
             </ul>
           </div>
@@ -508,7 +506,7 @@
               <div class="form-group">
                 <input id="male" class="form-group__input form-group__gender" type="radio" name="gender" checked="checked" value="male">
                 <label for="male">Male</label>
-                
+
                 <input id="female" class="form-group__input form-group__gender" type="radio" name="gender" value="female">
                 <label for="female">Female </label>
               </div>
@@ -527,6 +525,11 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      easing: 'linear',
+    });
+  </script>
 </body>
 </html>
